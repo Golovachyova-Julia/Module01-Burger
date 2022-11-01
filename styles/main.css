@@ -351,6 +351,7 @@ header {
 .footer-box {
    display: flex;
    justify-content: space-between;
+   gap: 20px;
 }
 
 .footer-logo {
@@ -362,16 +363,13 @@ header {
    display: none;
 }
 
-.footer-item {
-   flex: 0 0 auto;
-}
-
 .footer-item h2 {
    font-size: 20px;
    font-weight: 800;
    text-transform: uppercase;
    margin-bottom: 19px;
    margin-top: 0;
+   line-height: 1.5;
 }
 
 .footer-list li {
@@ -648,10 +646,6 @@ header {
    .footer-list+.footer-list-tel {
       display: none;
    }
-
-   .footer-logo+.footer-list-tel {
-      display: none;
-   }
 }
 
 @media (min-width: 766px) {
@@ -719,162 +713,197 @@ header {
       display: none;
    }
 
-
    .footer-list+.footer-list-tel {
       display: block;
    }
+}
 
-   @media (max-width: 765px) {
-      nav {
-         display: none;
-      }
-
-      .header {
-         gap: 21px;
-      }
+@media (max-width: 765px) {
+   nav {
+      display: none;
    }
 
-   @media (max-width: 630px) {
-      .breadcrumbs a {
-         font-size: 14px;
-      }
-
-      .title {
-         font-size: 38px;
-      }
-
-      .description {
-         font-size: 12px;
-      }
-
-      .bg {
-         padding: 55px 0;
-      }
-
-      .banner-box {
-         background-position: 17% center;
-         padding: 35px 14px 54px;
-      }
-
-      .bg {
-         margin-bottom: 36px;
-      }
-
-      .header {
-         padding-bottom: 20px;
-      }
-
-      .menu-title {
-         font-size: 27px;
-      }
-
-      .menu-select {
-         padding: 12px 15px;
-         font-size: 12px;
-         flex-basis: 137px;
-         background-position: 91% center;
-         margin-bottom: 30px;
-         margin-top: px;
-      }
-
-      .menu-grid-item {
-         margin-bottom: 25px;
-
-      }
-
-      .menu-grid {
-         gap: 0 12px;
-         margin-bottom: 15px;
-      }
-
-      .menu-grid-cover {
-         height: 180px;
-         margin-bottom: 9px;
-      }
-
-      .menu-grid-cover img {
-         height: 180px;
-      }
-
-      .menu-grid-title {
-         font-size: 13px;
-         font-weight: 700;
-      }
-
-      .menu-grid-price {
-         font-size: 16px;
-         margin-bottom: 12px;
-      }
-
-      .menu-grid-btn {
-         padding: 10px 22px;
-      }
-
-      .menu-other .menu-grid-item {
-         flex: 0 0 180px;
-      }
-
-      .menu-other .menu-grid-cover,
-      .menu-other .menu-grid-cover img {
-         height: 180px;
-      }
-
-      .menu-other .menu-grid {
-         gap: 0 5px;
-      }
-
-      .footer {
-         padding-top: 61px;
-         margin-top: -150px;
-      }
-
-      .footer-box {
-         display: flex;
-         flex-direction: column;
-      }
-
-      .footer-logo {
-         margin-right: 47px;
-      }
-
-      .footer-list+.footer-list-tel {
-         display: none;
-      }
-
-      .footer-logo+.footer-list-tel {
-         display: inline-block;
-      }
-
-      .footer-item h2 {
-         font-size: 18px;
-         margin-bottom: 21px;
-         margin-top: 18px;
-      }
-
-      .footer-item span {
-         margin-bottom: 8px;
-      }
+   .header {
+      gap: 21px;
    }
 
-   @media (max-width: 360px) {
-      .header-logo {
-         width: 116px;
-         height: 37px;
-         background-size: contain;
-      }
+   .menu-other .container {
+      padding-right: 0;
    }
 
-   @media (max-width: 320px) {
-      .banner-box {
-         background-position: 20% center;
-         margin-bottom: 40px;
-      }
-
-      .menu-grid-cover img {
-         width: 140px;
-      }
-
-      .menu-other .menu-grid-item {
-         flex: 0 0 139px;
-      }
+   .button-up.visible {
+      display: none;
    }
+}
+
+@media (max-width: 567px) {
+   .header {
+      padding-top: 19px;
+      padding-bottom: 19px;
+   }
+
+   .header-logo {
+      width: 116px;
+      height: 37px;
+   }
+
+   .breadcrumbs a {
+      font-size: 14px;
+   }
+
+   .title {
+      font-size: 38px;
+   }
+
+   .description {
+      font-size: 12px;
+   }
+
+   .bg {
+      margin-bottom: 33px;
+      padding: 55px 0;
+   }
+
+   .banner-box {
+      background-position: 17% center;
+      padding: 35px 24px 54px;
+      margin-bottom: 40px;
+   }
+
+   .menu-title {
+      font-size: 27px;
+   }
+
+   .menu-select {
+      padding: 13px 24px 13px 15px;
+      font-size: 12px;
+      flex-basis: 136px;
+      background-position: 91% center;
+   }
+
+   .menu-header {
+      margin-bottom: 30px;
+   }
+
+   .menu-grid {
+      gap: 25px 15px;
+      margin-bottom: 40px;
+   }
+
+   .menu-grid-cover {
+      height: 56vw;
+      margin-bottom: 10px;
+   }
+
+   .menu-grid-cover img {
+      height: 100%;
+   }
+
+   .menu-grid-title {
+      font-size: 15px;
+   }
+
+   .menu-grid-price {
+      font-size: 16px;
+      margin-top: 6px;
+      margin-bottom: 14px;
+   }
+
+   .menu-grid-btn {
+      padding: 10px 21px;
+   }
+
+   .menu-other {
+      height: 108vw;
+   }
+
+   .menu-other .menu-grid {
+      padding-bottom: 24vw;
+   }
+
+   .menu-other .menu-grid-cover {
+      height: 56vw;
+   }
+
+   .menu-other .menu-grid-cover img {
+      height: 100%;
+   }
+
+   .menu-other .menu-grid-item {
+      flex: 0 0 38vw;
+   }
+
+   .footer {
+      padding-top: 60px;
+      padding-bottom: 60px;
+      margin-top: 28px;
+   }
+
+   .footer-list+.footer-list-tel {
+      display: none;
+   }
+
+   .footer-tel {
+      display: block;
+   }
+
+   .footer-box {
+      display: grid;
+      grid-template-columns: 30% 70%;
+      grid-template-areas: "logo tel" "link link" "info info";
+      gap: 0;
+   }
+
+   .footer-item:nth-child(1) {
+      grid-area: logo;
+   }
+
+   .footer-item:nth-child(2) {
+      grid-area: link;
+   }
+
+   .footer-item:nth-child(3) {
+      grid-area: info;
+   }
+
+   .footer-tel {
+      grid-area: tel;
+      text-align: right;
+   }
+}
+
+@media (max-width: 360px) {
+   .header-logo {
+      width: 116px;
+      height: 37px;
+      background-size: contain;
+   }
+
+   .menu-grid-title {
+      font-size: 13px;
+      font-weight: 700;
+   }
+
+   .menu-other {
+      height: 120vw;
+   }
+}
+
+@media (max-width: 320px) {
+   .banner-box {
+      background-position: 25% center;
+      margin-bottom: 40px;
+   }
+
+   .menu-header {
+      margin-bottom: -5px;
+   }
+
+   .footer-item h2 {
+      font-size: 18px;
+   }
+
+   .footer-box {
+      gap: 25px 0;
+   }
+}
