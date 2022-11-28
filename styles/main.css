@@ -740,7 +740,6 @@ header {
     padding-top: 35px;
     padding-bottom: 125px;
   }
-
   .content-title {
     font-size: 86px;
     font-weight: 800;
@@ -863,7 +862,6 @@ header {
   .promo-left {
     padding: 11vw 4vw;
   }
-
   .promo + .footer {
     margin-top: 60px;
   }
@@ -963,7 +961,6 @@ header {
 
   .menu-title {
     font-size: 27px;
-    padding-bottom: 6px;
   }
 
   .menu-select {
@@ -1070,11 +1067,9 @@ header {
   .visual {
     margin-right: 26vw;
   }
-
   .visual-bg {
     display: none;
   }
-
   .main img {
     width: 340px;
     bottom: -17vw;
@@ -1103,7 +1098,6 @@ header {
   .promo-right {
     background-size: cover;
   }
-
   .cost {
     font-size: 55px;
     margin-bottom: -6px;
@@ -1216,7 +1210,6 @@ header {
   .promo + .footer > .container {
     padding-right: 52px;
   }
-
   .promo + .footer-box {
     gap: 21px 18px;
   }
@@ -1224,7 +1217,6 @@ header {
   .promo + .footer-item h2 {
     font-size: 18px;
   }
-
   .promo + .footer-tel {
     font-size: 20px;
   }
