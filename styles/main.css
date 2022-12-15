@@ -251,8 +251,8 @@ header {
   font-size: 15px;
   color: #443737;
   -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   flex-basis: 279px;
   background-image: url(../images/arrow.svg);
   background-size: 12.79px 7.75px;
@@ -283,7 +283,7 @@ header {
   top: 50%;
   transform: translate(-50%, -50%);
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   width: 100%;
   height: 430px;
 }
@@ -360,7 +360,7 @@ header {
   height: 56px;
 }
 
-.footer-logo + .footer-list-tel {
+.footer-logo+.footer-list-tel {
   display: none;
 }
 
@@ -518,12 +518,10 @@ header {
 .visual-bg {
   width: 430px;
   height: 100%;
-  background: linear-gradient(
-    2.42deg,
-    #f37335 -19.6%,
-    #fbb731 100.79%,
-    #fdc830 100.79%
-  );
+  background: linear-gradient(2.42deg,
+      #f37335 -19.6%,
+      #fbb731 100.79%,
+      #fdc830 100.79%);
 }
 
 .main img {
@@ -649,7 +647,7 @@ header {
 
 /*Responsive*/
 @media (min-width: 1001px) {
-  .footer-list + .footer-list-tel {
+  .footer-list+.footer-list-tel {
     display: none;
   }
 }
@@ -657,6 +655,12 @@ header {
 @media (min-width: 766px) {
   .header-burger {
     display: none;
+  }
+}
+
+@media (max-width: 1220px) {
+  .main>.wrapper {
+    margin: 0 3vw;
   }
 }
 
@@ -729,12 +733,8 @@ header {
     display: none;
   }
 
-  .footer-list + .footer-list-tel {
+  .footer-list+.footer-list-tel {
     display: block;
-  }
-
-  .main > .wrapper {
-    margin: 0 3vw;
   }
 
   .content {
@@ -743,6 +743,7 @@ header {
     padding-top: 35px;
     padding-bottom: 125px;
   }
+
   .content-title {
     font-size: 86px;
     font-weight: 800;
@@ -809,7 +810,7 @@ header {
     background-size: 363px 298px;
   }
 
-  .promo + .footer {
+  .promo+.footer {
     padding-top: 62px;
     padding-bottom: 65px;
     margin-top: 82px;
@@ -831,10 +832,6 @@ header {
 
   .button-up.visible {
     display: none;
-  }
-
-  .main > .wrapper {
-    margin: 0 3vw;
   }
 
   .content {
@@ -865,13 +862,9 @@ header {
   .promo-left {
     padding: 11vw 4vw;
   }
-  .promo + .footer {
-    margin-top: 60px;
-  }
 
-  .promo + .footer > .container {
-    padding-left: 12px;
-    padding-right: 2px;
+  .promo+.footer {
+    margin-top: 60px;
   }
 }
 
@@ -900,7 +893,7 @@ header {
 
   .visual-bg {
     width: 29vw;
-    margin-right: -7vw;
+    margin-right: -9vw;
   }
 
   .main img {
@@ -1006,7 +999,7 @@ header {
   }
 
   .menu-other {
-    height: 108vw;
+    height: 112vw;
   }
 
   .menu-other .menu-grid {
@@ -1031,7 +1024,7 @@ header {
     margin-top: 20px;
   }
 
-  .footer-list + .footer-list-tel {
+  .footer-list+.footer-list-tel {
     display: none;
   }
 
@@ -1094,7 +1087,7 @@ header {
     font-size: 13px;
   }
 
-  .promo > .wrapper {
+  .promo>.wrapper {
     flex-direction: column;
     gap: 22px;
   }
@@ -1103,18 +1096,19 @@ header {
   .promo-right {
     background-size: cover;
   }
+
   .cost {
     font-size: 55px;
     margin-bottom: -6px;
     margin-top: 6px;
   }
 
-  .promo-left > .promo-description {
+  .promo-left>.promo-description {
     font-size: 13px;
     line-height: 19px;
   }
 
-  .promo-right > .promo-description {
+  .promo-right>.promo-description {
     font-size: 15px;
     line-height: 22px;
     margin-bottom: 22px;
@@ -1150,7 +1144,7 @@ header {
   }
 
   .menu-other {
-    height: 120vw;
+    height: 122vw;
   }
 
   .main {
@@ -1186,7 +1180,7 @@ header {
     padding: 18px 41px;
   }
 
-  .main > .wrapper {
+  .main>.wrapper {
     margin: 0 3vw;
   }
 
@@ -1202,27 +1196,29 @@ header {
     padding: 43px 65px 44px 16px;
   }
 
-  .promo-right > .content-link,
+  .promo-right>.content-link,
   .promo a {
     padding: 20px 31px;
   }
 
-  .promo + .footer {
+  .promo+.footer {
     margin-top: 15px;
     padding-top: 60px;
   }
 
-  .promo + .footer > .container {
+  .promo+.footer>.container {
     padding-right: 20px;
   }
-  .promo + .footer-box {
+
+  .promo+.footer-box {
     gap: 21px 18px;
   }
 
-  .promo + .footer-item h2 {
+  .promo+.footer-item h2 {
     font-size: 18px;
   }
-  .promo + .footer-tel {
+
+  .promo+.footer-tel {
     font-size: 20px;
   }
 }
@@ -1237,7 +1233,7 @@ header {
     margin-bottom: -5px;
   }
 
-  .footer > .container {
+  .footer>.container {
     padding-right: 0;
   }
 
@@ -1255,5 +1251,5 @@ header {
     grid-area: tel;
     text-align: right;
     margin-right: 2vw;
-}
+  }
 }
